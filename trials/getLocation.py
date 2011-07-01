@@ -36,10 +36,10 @@ def main():
                            # registered domain to use the latitude API.
                            #
                            # https://www.google.com/accounts/ManageDomains
-                           consumer_key='REGISTERED DOMAIN NAME',
-                           consumer_secret='KEY GIVEN DURING REGISTRATION',
+                           consumer_key='elsmorian.com',
+                           consumer_secret='3DSvBitUBNoVHtd9GlcvYOBi',
                            user_agent='google-api-client-python-latitude/1.0',
-                           domain='REGISTERED DOMAIN NAME',
+                           domain='elsmorian.com',
                            scope='https://www.googleapis.com/auth/latitude',
                            xoauth_displayname='Google API Latitude Example',
                            location='current',
@@ -62,7 +62,10 @@ def main():
           "altitude": 35
           }
       }
-  print service.currentLocation().insert(body=body).execute()
+  #print service.currentLocation().insert(body=body).execute()
+  print service.currentLocation().get().execute()
+  
+  print service.location.list().execute()
 
 if __name__ == '__main__':
   main()
