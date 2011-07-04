@@ -37,7 +37,7 @@ def main():
                            #
                            # https://www.google.com/accounts/ManageDomains
                            consumer_key='elsmorian.com',
-                           consumer_secret='3DSvBitUBNoVHtd9GlcvYOBi',
+                           consumer_secret='Secret',
                            user_agent='google-api-client-python-latitude/1.0',
                            domain='elsmorian.com',
                            scope='https://www.googleapis.com/auth/latitude',
