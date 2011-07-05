@@ -65,7 +65,7 @@ def main():
   #print service.currentLocation().insert(body=body).execute()
   print service.currentLocation().get().execute()
   
-  print service.location.list().execute()
+  print service.location().list().execute()
 
 if __name__ == '__main__':
   main()
